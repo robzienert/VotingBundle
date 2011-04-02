@@ -18,6 +18,13 @@ abstract class Vote implements VoteInterface
 
     protected $value;
 
+    public function __construct($object, UserInterface $user, $value)
+    {
+        $this->setObject($object);
+        $this->setUser($user);
+        $this->setValue($value);
+    }
+
     public function getId()
     {
         return $this->id;
@@ -33,7 +40,7 @@ abstract class Vote implements VoteInterface
         return $this->user;
     }
 
-    public function setObject(Votable $object)
+    public function setObject($object)
     {
         $this->object = $object;
     }

@@ -10,16 +10,16 @@ interface VoteManagerInterface
      * Get an array containing the total score for $object and the number of
      * votes it has received.
      *
-     * @param Votable $object
+     * @param object $object
      * @return array
      */
-    public function getScore(Votable $object);
+    public function getScore($object);
 
     /**
      * Get an array mapping object ids to their total score and number of votes
      * for each object.
      *
-     * @param array $objects An array of Votable objects.
+     * @param array $objects An array of votable objects.
      * @return array
      */
     public function getScores(array $objects);
@@ -30,12 +30,12 @@ interface VoteManagerInterface
      *
      * A zero vote indicates that any existing vote should be removed.
      *
-     * @param Votable       $object
+     * @param object        $object
      * @param UserInterface $user
      * @param int           $vote
      * @return bool
      */
-    public function recordVote(Votable $object, UserInterface $user, $vote);
+    public function recordVote($object, UserInterface $user, $vote);
 
     /**
      * Get the top N scored objects for a given model.
@@ -57,14 +57,14 @@ interface VoteManagerInterface
     public function getBottom($class, $limit = 10);
 
     /**
-     * Get the vote made on the given Votable object by the given user. Will
-     * return false if no matching vote exists.
+     * Get the vote made on the given  object by the given user. Will return
+     * false if no matching vote exists.
      *
-     * @param Votable       $object
+     * @param object        $object
      * @param UserInterface $user
      * @return int|false
      */
-    public function getUserVote(Votable $object, UserInterface $user);
+    public function getUserVote($object, UserInterface $user);
 
     /**
      * Get an array mapping object ids to their score given by a user for each
@@ -75,4 +75,6 @@ interface VoteManagerInterface
      * @return array
      */
     public function getUserVotes(array $objects, UserInterface $user);
+
+    public function getClass();
 }

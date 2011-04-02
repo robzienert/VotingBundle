@@ -38,9 +38,16 @@ interface VoteInterface
     public function getUser();
 
     /**
-     * Returns the subject Votable object.
+     * Returns the subject object.
      *
-     * @return Votable
+     * @return object
      */
     public function getObject();
+
+    /**
+     * Returns the subject object class
+     *
+     * @return string
+     */
+    public function getObjectClass();
 }
