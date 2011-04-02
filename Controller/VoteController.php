@@ -6,8 +6,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class VoteController extends Controller
 {
-    public function indexAction()
+    public function createAction()
     {
-        return $this->render('RizzaVotingBundle:Vote:index.html.twig');
+    }
+
+    public function updateAction()
+    {
     }
 }
