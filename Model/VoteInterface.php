@@ -5,6 +5,11 @@ namespace Rizza\VotingBundle\Model;
 interface VoteInterface
 {
     /**
+     * @return int
+     */
+    public function getId();
+
+    /**
      * Returns true if the vote is an upvote.
      *
      * @return bool
