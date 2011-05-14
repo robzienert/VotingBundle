@@ -15,9 +15,4 @@ class RizzaVotingExtension extends Extension
 
         $loader->load('orm.xml');
     }
-
-    public function getAlias()
-    {
-        return 'rizza_voting';
-    }
 }

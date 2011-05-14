@@ -1,7 +1,7 @@
 VotingBundle
 ============
 
-A generic voting bundle.
+A generic voting bundle, purposed to serve as the engine for any voting system.
 
 *WARNING:* This is a prototype and not a final/stable bundle.
 

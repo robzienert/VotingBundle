@@ -61,7 +61,7 @@ class VoteManager implements VoteManagerInterface
         }
     }
 
-    protected function getTargetAssociationMapping($target)
+    public function getTargetAssociationMapping($target)
     {
         $className = get_class($className);
         $associations = $this->em->getMetadataFactory()
@@ -133,7 +133,7 @@ class VoteManager implements VoteManagerInterface
     public function getUserVotes(array $targets, UserInterface $user)
     {
         $votes = array();
-        
+
         foreach ($targets as $target) {
             $votes[$target] = $this->getUserVote($target, $user);
         }

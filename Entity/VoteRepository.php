@@ -6,6 +6,8 @@ use Doctrine\ORM\Query\ResultSetMapping;
 
 class VoteRepository extends Doctrine\ORM\EntityRepository
 {
+    protected $strategy;
+
     public function findScore($targetEntityTable)
     {
         $rsm = new ResultSetMapping();
