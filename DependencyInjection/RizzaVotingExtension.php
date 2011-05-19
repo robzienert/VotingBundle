@@ -12,7 +12,6 @@ class RizzaVotingExtension extends Extension
     public function load(array $config, ContainerBuilder $container)
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-
-        $loader->load('orm.xml');
+        $loader->load('services.xml');
     }
 }
