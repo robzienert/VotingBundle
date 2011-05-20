@@ -1,7 +1,3 @@
-rizza_voting_vote_create:
-  pattern: /new
-  defaults: { _controller: RizzaVotingBundle:Vote:create }
-
-rizza_voting_vote_update:
-  pattern: /update/{id}
-  defaults: { _controller: RizzaVotingBundle:Vote:update }
+rizza_voting_vote_record:
+  pattern: /record
+  defaults: { _controller: RizzaVotingBundle:Vote:record }

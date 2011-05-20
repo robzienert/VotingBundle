@@ -2,7 +2,7 @@
 
 namespace Rizza\VotingBundle\Entity;
 
-class EntityException extends \Exception implements Exception
+class EntityException extends \Exception
 {
     public static function classNotValidAssociation($className)
     {

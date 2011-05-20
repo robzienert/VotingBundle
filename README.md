@@ -9,7 +9,7 @@ Install
 -------
 
     _voting:
-      resource: "@RizzaVoting/Resources/config/routing.yml"
+      resource: "@RizzaVotingBundle/Resources/config/routing.yml"
       prefix: /voting
 
 TODO
